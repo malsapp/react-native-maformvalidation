@@ -1,5 +1,5 @@
 {
-  "name": "react-native-maformvalidation",
+  "name": "@malsapp/react-native-maformvalidation",
   "version": "1.0.0",
   "description": "React native form validation",
   "main": "index.js",
