@@ -2,8 +2,10 @@ import Form from './Form';
 import FormValidator from './FormValidator';
 import Rule from './Rule';
 
-export default {
+const Lib = {
   Form,
   FormValidator,
-  Rule
+  Rule,
 }
+
+module.exports = Lib;
