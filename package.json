@@ -1,6 +1,6 @@
 {
   "name": "@malsapp/react-native-maformvalidation",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React native form validation",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "url": "https://github.com/malsapp/react-native-maformvalidation/issues"
   },
   "homepage": "https://github.com/malsapp/react-native-maformvalidation#readme",
-  "dependencies": {
+  "peerDependencies": {
     "lodash": "^4.17.4"
   }
 }
