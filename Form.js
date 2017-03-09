@@ -20,7 +20,7 @@ class Form extends React.Component {
   }
 
   addRef = (ref, type) => {
-    if (type.name === 'FormValidator') {
+    if (type.name === 'FormValidator' && ref && ref.validate) {
       this.validatorRefs.push(ref);
     }
   }

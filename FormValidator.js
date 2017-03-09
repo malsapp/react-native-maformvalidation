@@ -13,7 +13,7 @@ class FormValidator extends React.Component {
   validatorRefs = [];
   
   addRef = (ref, type) => {
-    if (type.name === 'Rule') {
+    if (type.name === 'Rule' && ref) {
       this.validatorRefs.push(ref);
     }
   }
