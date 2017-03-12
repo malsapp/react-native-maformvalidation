@@ -31,7 +31,7 @@ class FormValidator extends React.Component {
 
   render() {
     return (<View>
-      {this.props.children.map((Child, index) => <Child.type
+      {React.Children.toArray(this.props.children).map((Child, index) => <Child.type
         key={`Child${index}`}
         {...Child.props}
         ref={ref => this.addRef(ref, Child.type)}
