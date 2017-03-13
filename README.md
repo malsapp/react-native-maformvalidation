@@ -9,7 +9,7 @@ React Native maformvalidation is a cross-platform library for validating forms u
 `npm install @malsapp/react-native-maformvalidation --save`
 
 <a name='SetUp Validation functions and Regex'></a>
-## Example ##
+## SetUp Validation functions and Regex: Example ##
 ```
 const rules = {
   email: /[a-z0-9!#$%&'/=?^_`{|}~-](?:.[a-z0-9!#$%&'/=?^_`{|}~-])@(?:[a-z0-9](?:[a-z0-9-][a-z0-9])?.)[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/,
@@ -22,7 +22,7 @@ const rules = {
 ```
 
 <a name='Apply Validation rules on fields'></a>
-## Example ##
+## Apply Validation rules on fields: Example ##
 ```
 <View style={styles.container}>
         <Form ref={ref => (this.form = ref)}>
