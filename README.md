@@ -27,10 +27,10 @@ Rule | ```textStyle : Style the error message , message : Text of error message 
 ## Built-in Rules
 Rule | Description
 ------------ | -------------
-email | Check if value is valide Email or not 
+email | Check if the value is valid Email or not 
 password | Make sure password is more than 6 characters
 required | Check if there is a value in the field or not
-isYouTube | Check if url is valid youtube link or not
+isYouTube | Check if URL is valid youtube link or not
 
 
 
