@@ -12,7 +12,16 @@ yarn add @malsapp/react-native-maformvalidation
 ```
 
 ## Components
-####Form
+
+###Form
+####Encapsulate all form elements
+### Properties
+Component | Props
+------------ | -------------
+FormValidator | ```Value(String || Function ) : Get value for validation  ```
+Rule | ```textStyle : Style the error message , message : Text of error message ,rule(Built-in || function || Regex) : Validation rule ```
+
+
 Component | Description
 ------------ | -------------
 Form | Encapsulate all form elements 
