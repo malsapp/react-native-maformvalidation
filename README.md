@@ -8,10 +8,11 @@ React Native maformvalidation is a cross-platform library for validating forms u
 ```
 npm install --save @malsapp/react-native-maformvalidation 
 OR
-yarn install --save @malsapp/react-native-maformvalidation 
+yarn add @malsapp/react-native-maformvalidation 
 ```
 
 ## Components
+####Form
 Component | Description
 ------------ | -------------
 Form | Encapsulate all form elements 
@@ -34,17 +35,8 @@ isYouTube | Check if URL is valid youtube link or not
 
 
 
-<a name='Built-in rules implementation'></a>
-## Built-in rules implementation ##
-```
-const rules = {
-  email: /[a-z0-9!#$%&'/=?^_`{|}~-](?:.[a-z0-9!#$%&'/=?^_`{|}~-])@(?:[a-z0-9](?:[a-z0-9-][a-z0-9])?.)[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/,
-  password: value => !value || value.length < 6,
-  phone: /^\d{7,}$/,
-  required: value => !value || value.length === 0,
-  isYouTube: /^((?:https?:)?//)?((?:www|m)\.)?((?:youtube.com|youtu.be))(/(?:[\w-]+?v=|embed/|v/)?)([\w-]+)(\S+)?$/, 
-};
-```
+
+
 
 <a name='Apply Validation rules on fields'></a>
 ## Apply Validation rules on fields: Example ##
