@@ -42,7 +42,6 @@ const rules = {
   password: value => !value || value.length < 6,
   phone: /^\d{7,}$/,
   required: value => !value || value.length === 0,
-  equals: target => value => !value || value !== target,
   isYouTube: /^((?:https?:)?//)?((?:www|m)\.)?((?:youtube.com|youtu.be))(/(?:[\w-]+?v=|embed/|v/)?)([\w-]+)(\S+)?$/, 
 };
 ```
