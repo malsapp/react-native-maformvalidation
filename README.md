@@ -10,24 +10,21 @@ React Native maformvalidation is a cross-platform library for validating forms u
 
 <a name='SetUp Validation functions and Regex'></a>
 ## Example ##
-`const rules = {
+```
+const rules = {
   email: /[a-z0-9!#$%&'/=?^_`{|}~-](?:.[a-z0-9!#$%&'/=?^_`{|}~-])@(?:[a-z0-9](?:[a-z0-9-][a-z0-9])?.)[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/,
-  
   password: value => !value || value.length < 6,
-  
   phone: /^\d{7,}$/,
-  
   required: value => !value || value.length === 0,
-  
   equals: target => value => !value || value !== target,
-  
-  isYouTube: /^((?:https?:)?//)?((?:www|m)\.)?((?:youtube.com|youtu.be))(/(?:[\w-]+?v=|embed/|v/)?)([\w-]+)(\S+)?$/,
-  
-};`
+  isYouTube: /^((?:https?:)?//)?((?:www|m)\.)?((?:youtube.com|youtu.be))(/(?:[\w-]+?v=|embed/|v/)?)([\w-]+)(\S+)?$/, 
+};
+```
 
 <a name='Apply Validation rules on fields'></a>
 ## Example ##
-`<View style={styles.container}>
+```
+<View style={styles.container}>
         <Form ref={ref => (this.form = ref)}>
           {/* Email Input) */}
           <FormLabel labelStyle={styles.alignText}>{I18n.t('login')}</FormLabel>
@@ -65,5 +62,5 @@ React Native maformvalidation is a cross-platform library for validating forms u
             onPress={() => this.form.validate()}
           />
         </Form>
-
       </View>
+```
