@@ -6,9 +6,9 @@ React Native maformvalidation is a cross-platform library for validating forms u
 <a name='Installation'></a>
 ## Installation ##
 ```
-npm install @malsapp/react-native-maformvalidation --save
+npm install --save @malsapp/react-native-maformvalidation 
 OR
-yern install @malsapp/react-native-maformvalidation --save
+yern install --save @malsapp/react-native-maformvalidation 
 ```
 
 <a name='SetUp Validation functions and Regex'></a>
