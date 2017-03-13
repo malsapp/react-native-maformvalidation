@@ -29,7 +29,6 @@ React Native maformvalidation is a cross-platform library for validating forms u
 ## Example ##
 `<View style={styles.container}>
         <Form ref={ref => (this.form = ref)}>
-
           {/* Email Input) */}
           <FormLabel labelStyle={styles.alignText}>{I18n.t('login')}</FormLabel>
           <FormInput
@@ -67,4 +66,4 @@ React Native maformvalidation is a cross-platform library for validating forms u
           />
         </Form>
 
-      </View>`
+      </View>
