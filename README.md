@@ -14,25 +14,32 @@ yarn add @malsapp/react-native-maformvalidation
 ## Components
 
 ###Form
-####Encapsulate all form elements
-### Properties
-Component | Props
+#####Encapsulate all form elements 
+#### Functions
+Function | Description
+------------ | -------------
+Validate | Return True in case of valid form
+
+
+
+###FormValidator
+#####Validate Values and contain Rules component  
+#### Properties
+Prop | Description
 ------------ | -------------
 FormValidator | ```Value(String || Function ) : Get value for validation  ```
-Rule | ```textStyle : Style the error message , message : Text of error message ,rule(Built-in || function || Regex) : Validation rule ```
 
 
-Component | Description
+
+###FormValidator
+#####Validate Values and contain Rules component  
+#### Properties
+Prop | Description
 ------------ | -------------
-Form | Encapsulate all form elements 
-FormValidator | Validate Values and contain Rules component 
-Rule | Give a message and style for specific validation rule, return true if rule fail
+textStyle | ```Style the error message ```
+message | ```Text of error message```
+rule | ```(Built-in || function || Regex)Validation rule  ```
 
-## Properties
-Component | Props
------------- | -------------
-FormValidator | ```Value(String || Function ) : Get value for validation  ```
-Rule | ```textStyle : Style the error message , message : Text of error message ,rule(Built-in || function || Regex) : Validation rule ```
 
 ## Built-in Rules
 Rule | Description
