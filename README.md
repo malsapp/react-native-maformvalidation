@@ -22,9 +22,9 @@ Rule | Give a message and style for specific validation rule, return true if rul
 Component | Props
 ------------ | -------------
 FormValidator | ```Value(String || Function ) : Get value for validation  ```
-Rule | ```textStyle : Style the error message , message = Text of error message ,rule = Validation rule (BuiltIn || function || Regex)```
+Rule | ```textStyle : Style the error message , message = Text of error message ,rule = Validation rule (Built-in || function || Regex)```
 
-## BuiltIn Rules
+## Built-in Rules
 Rule | Description
 ------------ | -------------
 email | Check if value is valide Email or not 
@@ -34,8 +34,8 @@ isYouTube | Check if url is valid youtube link or not
 
 
 
-<a name='SetUp Validation functions and Regex'></a>
-## SetUp Validation functions and Regex: Example ##
+<a name='Built-in rules implementation'></a>
+## Built-in rules implementation ##
 ```
 const rules = {
   email: /[a-z0-9!#$%&'/=?^_`{|}~-](?:.[a-z0-9!#$%&'/=?^_`{|}~-])@(?:[a-z0-9](?:[a-z0-9-][a-z0-9])?.)[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/,
