@@ -31,8 +31,8 @@ FormValidator | ```Value(String || Function ) : Get value for validation  ```
 
 
 
-###FormValidator
-#####Validate Values and contain Rules component  
+###Rule
+#####Validation Rules and styles  
 #### Properties
 Prop | Description
 ------------ | -------------
