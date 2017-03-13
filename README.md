@@ -18,7 +18,7 @@ yarn add @malsapp/react-native-maformvalidation
 #### Functions
 Function | Description
 ------------ | -------------
-Validate | Return True in case of valid form
+validate | Return `True` in case of valid form
 
 
 
@@ -27,7 +27,7 @@ Validate | Return True in case of valid form
 #### Properties
 Prop | Description
 ------------ | -------------
-FormValidator | ```Value(String || Function ) : Get value for validation  ```
+value | ```Value(String || Function ) : Get value for validation  ```
 
 
 
@@ -36,9 +36,9 @@ FormValidator | ```Value(String || Function ) : Get value for validation  ```
 #### Properties
 Prop | Description
 ------------ | -------------
-textStyle | ```Style the error message ```
-message | ```Text of error message```
-rule | ```(Built-in || function || Regex)Validation rule  ```
+textStyle | Style the error message
+message |  Text of error message
+rule | (Built-in || function that takes the value and return ``true`` if invalid || Regex) Validation rule
 
 
 ## Built-in Rules
@@ -57,45 +57,26 @@ isYouTube | Check if URL is valid youtube link or not
 <a name='Apply Validation rules on fields'></a>
 ## Apply Validation rules on fields: Example ##
 ```
-<View style={styles.container}>
-        <Form ref={ref => (this.form = ref)}>
-          {/* Email Input) */}
-          <FormLabel labelStyle={styles.alignText}>{I18n.t('login')}</FormLabel>
-          <FormInput
-            inputStyle={styles.alignText}
-            placeholder="email@domain.com"
-            textInputRef={email => (this.email = email)}
-          />
-          <FormValidator
-            value={() => (this.email._lastNativeText)}
-          >
-            <Rule textStyle={styles.error} message="Not Found" rule={Rule.required} />
-            <Rule textStyle={styles.error} message="Not Email" rule={Rule.email} />
-          </FormValidator>
+<Form ref={ref => (this.form = ref)}> 
 
-          {/* Password Input) */}
-          <FormLabel labelStyle={styles.alignText}>{I18n.t('password')}</FormLabel>
-          <FormInput
-            inputStyle={styles.alignText}
-            placeholder="********"
-            secureTextEntry
-          />
-          <FormLabel labelStyle={styles.error}>{I18n.t('login')}</FormLabel>
+    {/* Email Input) */}
+    <Text>Email</Text>
+    <TextField placeholder="email@domain.com" onChangeText={email => this.setState({ email })} />
+    <FormValidator value={this.state.email}>
+        <Rule textStyle={styles.error} message="Email is required" rule={Rule.required} />
+        <Rule textStyle={styles.error} message="Not valid email" rule={Rule.email} />
+    </FormValidator>
 
-          <Button
-            buttonStyle={styles.forgotPasswordButton}
-            textStyle={styles.forgotPasswordText}
-            title={I18n.t('forgot-password')}
-          />
+    {/* Password Input) */}
+    <Text>Password</Text>
+    <Text placeholder="********" secureTextEntry onChangeText={password => this.setState({ password })} />
+    <FormValidator>
+        <Rule textStyle={styles.error} message="Password is required" rule={Rule.required} />
+        <Rule textStyle={styles.error} message="Password must be 6+ charecters" rule={Rule.password} />
+    </FormValidator>
 
-          <Button
-            buttonStyle={styles.loginButton}
-            title={I18n.t('login')}
-            raised
-            onPress={() => this.form.validate()}
-          />
-        </Form>
-      </View>
+    <Button title="login" onPress={() => this.form.validate()}/>
+</Form>
 ```
 
 ## License
