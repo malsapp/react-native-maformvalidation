@@ -22,7 +22,7 @@ Rule | Give a message and style for specific validation rule, return true if rul
 Component | Props
 ------------ | -------------
 FormValidator | ```Value(String || Function ) : Get value for validation  ```
-Rule | ```textStyle : Style the error message , message = Text of error message ,rule = Validation rule (Built-in || function || Regex)```
+Rule | ```textStyle : Style the error message , message : Text of error message ,rule(Built-in || function || Regex) : Validation rule ```
 
 ## Built-in Rules
 Rule | Description
