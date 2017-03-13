@@ -24,6 +24,15 @@ Component | Props
 FormValidator | ```Value(String || Function ) : Get value for validation  ```
 Rule | ```textStyle : Style the error message , message = Text of error message ,rule = Validation rule (BuiltIn || function || Regex)```
 
+## BuiltIn Rules
+Rule | Description
+------------ | -------------
+email | Check if value is valide Email or not 
+password | Make sure password is more than 6 characters
+required | Check if there is a value in the field or not
+isYouTube | Check if url is valid youtube link or not
+
+
 
 <a name='SetUp Validation functions and Regex'></a>
 ## SetUp Validation functions and Regex: Example ##
