@@ -11,6 +11,13 @@ OR
 yern install --save @malsapp/react-native-maformvalidation 
 ```
 
+## Components
+Component | Description
+------------ | -------------
+Form | Encapsulate all form elements 
+FormValidator | Validate Vlues and contain Rules component 
+Rule | Give a message and style for specific validation rule 
+
 <a name='SetUp Validation functions and Regex'></a>
 ## SetUp Validation functions and Regex: Example ##
 ```
