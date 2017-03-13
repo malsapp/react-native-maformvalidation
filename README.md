@@ -15,7 +15,7 @@ yarn install --save @malsapp/react-native-maformvalidation
 Component | Description
 ------------ | -------------
 Form | Encapsulate all form elements 
-FormValidator | Validate Vlues and contain Rules component 
+FormValidator | Validate Values and contain Rules component 
 Rule | Give a message and style for specific validation rule, return true if rule fail
 
 ## Properties
