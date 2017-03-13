@@ -38,7 +38,7 @@ Prop | Description
 ------------ | -------------
 textStyle | Style the error message
 message |  Text of error message
-rule | (Built-in || function that takes the value and return ``true`` if invalid || Regex) Validation rule
+rule | `(Built-in || function that takes the value and return ``true`` if invalid || Regex) Validation rule`
 
 
 ## Built-in Rules
