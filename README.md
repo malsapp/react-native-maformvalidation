@@ -21,9 +21,8 @@ Rule | Give a message and style for specific validation rule
 ## Properties
 Component | Props
 ------------ | -------------
-FormValidator | Value(String || Function ) : Get value for validation  
-Rule | textStyle : Style the error message , message = Text of error message , 
-        rule = Validation rule (BuiltIn || function || Regex)
+FormValidator | ```Value(String || Function ) : Get value for validation  ```
+Rule | ```textStyle : Style the error message , message = Text of error message ,rule = Validation rule (BuiltIn || function || Regex)```
 
 
 <a name='SetUp Validation functions and Regex'></a>
