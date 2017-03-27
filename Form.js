@@ -18,7 +18,7 @@ class Form extends React.Component {
   validatorRefs = [];
 
   validate() {
-    return this.validatorRefs.every(item => item.validate());
+    return this.validatorRefs.filter(item => !item.validate()).length === 0;
   }
 
   addRef = (ref, type) => {
