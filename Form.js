@@ -3,6 +3,8 @@ import {
   View,
 } from 'react-native';
 
+import _ from 'lodash';
+
 class Form extends React.Component {
 
   static propTypes = {
@@ -16,7 +18,7 @@ class Form extends React.Component {
   validatorRefs = [];
 
   validate() {
-    return this.validatorRefs.map(item => item.validate()) === undefined;
+    return this.validatorRefs.every(item => item.validate());
   }
 
   addRef = (ref, type) => {
@@ -25,7 +27,12 @@ class Form extends React.Component {
     }
   }
 
+  clearRefs = () => {
+    this.validatorRefs = [];
+  }
+
   render() {
+    this.clearRefs();
     return (<View>
       {this.props.children.map((Child, index) => <Child.type
         key={`Child${index}`}

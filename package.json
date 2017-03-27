@@ -1,6 +1,6 @@
 {
   "name": "@malsapp/react-native-maformvalidation",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "React native form validation",
   "main": "index.js",
   "scripts": {
