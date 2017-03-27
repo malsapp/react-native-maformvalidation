@@ -16,7 +16,7 @@ class Form extends React.Component {
   validatorRefs = [];
 
   validate() {
-    this.validatorRefs.map(item => item.validate());
+    return this.validatorRefs.map(item => item.validate()) === undefined;
   }
 
   addRef = (ref, type) => {
