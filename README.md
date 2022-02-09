@@ -1,10 +1,10 @@
-# React Native maformvalidation #
+# React Native maformvalidation
 [![npm version](https://badge.fury.io/js/react-native-maformvalidation.svg)](https://badge.fury.io/js/react-native-maformvalidation)
 
 React Native maformvalidation is a cross-platform library for validating forms using [React Native](https://github.com/facebook/react-native).
 
 <a name='Installation'></a>
-## Installation ##
+## Installation
 ```
 npm install --save @malsapp/react-native-maformvalidation 
 OR
@@ -13,8 +13,10 @@ yarn add @malsapp/react-native-maformvalidation
 
 ## Components
 
-###Form
-#####Encapsulate all form elements 
+### Form
+
+Encapsulate all form elements 
+
 #### Functions
 Function | Description
 ------------ | -------------
@@ -22,8 +24,10 @@ validate | Return `True` in case of valid form
 
 
 
-###FormValidator
-#####Validate Values and contain Rules component  
+### FormValidator
+
+Validate Values and contain Rules component  
+
 #### Properties
 Prop | Description
 ------------ | -------------
@@ -31,8 +35,10 @@ value | ```Value(String || Function ) : Get value for validation  ```
 
 
 
-###Rule
-#####Validation Rules and styles  
+### Rule
+
+Validation Rules and styles  
+
 #### Properties
 Prop | Description
 ------------ | -------------
